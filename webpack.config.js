@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const isDev = process.env.NODE_ENV = development;
+const isDev = process.env.NODE_ENV = 'development';
 const isProd = !isDev;
 
 module.exports = {
@@ -11,7 +11,7 @@ module.exports = {
     entry: './index.js',
     output: {
         filename: '[name].[contenthash].js',
-        assetModuleFilename: 'assets/[hash]',
+        assetModuleFilename: 'assets/[hash][ext][query]',
         clean: true,
         path: path.resolve(__dirname, 'dist'),
     },
@@ -48,9 +48,12 @@ module.exports = {
             },
             {
                 test: /\.pug$/i,
-                use: 'pug-loader',
+                loader: 'pug-loader',
+                options: {  
+                    pretty: isDev ? true : false,
+                },
                 include: path.join(__dirname, 'src'),
-                exclude: /(node_modules|bower_components)/,
+                exclude: /node_modules/,
             },
             {
                 test: /\.m?js/i,
