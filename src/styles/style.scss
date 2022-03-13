@@ -379,3 +379,30 @@ body {
     margin: 0.2rem 0 0 0;
   }
 }
+.actors {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 2.1rem;
+  &-item {
+    flex: 0 0 14%;
+  }
+  &__link {
+    overflow: hidden;
+    position: relative;
+    width: 19rem;
+    height: 19rem;
+    display: block;
+    border-radius: 100%;
+  }
+  &__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    width: 19rem;
+    height: 19rem;
+  }
+}
