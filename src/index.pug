@@ -71,6 +71,42 @@ html(lang="en")
                         a(href="#").movies__link 
                             img(src=require('./img/posters/poster-6.png'), alt="poster6").movies__img
                 button.section__btn See more
-  
+        section.section 
+            .container 
+                h2.section__h2 
+                    a(href="#").section__h2-link Popular Genres
+                .genres
+                    .genres-item.genres-item_romance
+                        .genres-icon
+                            img(src=require('./img/genres/romance.svg'), alt="icon-romance").genres__image
+                        h3.genres__title Romance
+                    .genres-item.genres-item_drama 
+                        .genres-icon
+                            img(src=require('./img/genres/drama.svg'), alt="icon-drama").genres__image
+                        h3.genres__title Drama
+                    .genres-item.genres-item_historical 
+                        .genres-icon
+                            img(src=require('./img/genres/historical.svg'), alt="icon-historical").genres__image
+                        h3.genres__title Historical 
+                    .genres-item.genres-item_action 
+                        .genres-icon
+                            img(src=require('./img/genres/action.svg'), alt="icon-action").genres__image
+                        h3.genres__title Action
+                    .genres-item.genres-item_sci-fi 
+                        .genres-icon
+                            img(src=require('./img/genres/sci-fi.svg'), alt="icon-sci-fi").genres__image
+                        h3.genres__title Sci-fi
+                    .genres-item.genres-item_horror 
+                        .genres-icon
+                            img(src=require('./img/genres/horror.svg'), alt="icon-horror").genres__image
+                        h3.genres__title Horror
+                    .genres-item.genres-item_comedy 
+                        .genres-icon
+                            img(src=require('./img/genres/comedy.svg'), alt="icon-comedy").genres__image
+                        h3.genres__title Comedy
+                    .genres-item.genres-item_documentary 
+                        .genres-icon
+                            img(src=require('./img/genres/documentary.svg'), alt="icon-documentary").genres__image
+                        h3.genres__title Documentary
 
         include modules/footer

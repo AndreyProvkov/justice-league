@@ -313,3 +313,69 @@ body {
     object-fit: cover;
   }
 }
+.genres {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 2.1rem;
+  &-item {
+    flex: 0 0 23.7%;
+    border-radius: 2rem;
+    padding: 4.8rem 1rem 3.8rem;
+    box-sizing: border-box;
+    margin-bottom: 2.7rem;
+    &_romance {
+      background: linear-gradient(109.31deg, #fd093f 2.4%, #f383f1 100%);
+    }
+    &_drama {
+      background: linear-gradient(114.5deg, #0fffda 2.22%, #3cdb77 68.84%);
+    }
+    &_historical {
+      background: linear-gradient(109.31deg, #b936ff 2.4%, #57deda 100%);
+    }
+    &_action {
+      background: linear-gradient(
+        109.31deg,
+        #fd093f 2.4%,
+        #fb1378 2.41%,
+        #fccb1a 100%
+      );
+    }
+    &_sci-fi {
+      background: linear-gradient(109.31deg, #ff6472 2.4%, #fda75d 100%);
+    }
+    &_horror {
+      background: linear-gradient(110.16deg, #13547a 2.37%, #80d0c7 96.77%);
+    }
+    &_comedy {
+      background: linear-gradient(109.93deg, #fff77b 2.37%, #ffbf42 50%);
+    }
+    &_documentary {
+      background: linear-gradient(
+        109.31deg,
+        #1fa2ff 2.4%,
+        #1fa2ff 2.41%,
+        #1f535c 97.46%
+      );
+    }
+  }
+  &-icon {
+    height: 8rem;
+    position: relative;
+    overflow: hidden;
+  }
+  &__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+  }
+  &__title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin: 0.2rem 0 0 0;
+  }
+}
