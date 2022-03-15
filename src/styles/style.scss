@@ -76,31 +76,40 @@ body {
 .control {
   display: flex;
   align-items: center;
-  list-style: none;
-  padding-left: 0;
-  &-item {
-    margin-left: 7.5rem;
-  }
   &-btn {
-    background-color: transparent;
-    border: none;
     display: block;
-    background-size: cover;
-    background-repeat: no-repeat;
-    &_search {
-      background-image: url("../img/search.svg");
+    padding: 2rem;
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-right: 3.5rem;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+    &__icon {
+      transition: 0.2s all;
       width: 1.8rem;
       height: 1.8rem;
-    }
-    &_notice {
-      background-image: url("../img/notice.svg");
-      width: 2.13rem;
-      height: 2.352rem;
-    }
-    &_account {
-      background-image: url("../img/account.svg");
-      width: 1.8rem;
-      height: 1.92rem;
+      &:hover {
+        transform: scale(1.2);
+      }
+      &-search {
+        &:hover {
+          stroke: $bg-gradient-safe;
+        }
+      }
+      &-notice {
+        width: 2.13rem;
+        height: 2.352rem;
+        &:hover {
+          fill: $bg-gradient-safe;
+        }
+      }
+      &-account {
+        &:hover {
+          fill: $bg-gradient-safe;
+        }
+      }
     }
   }
 }
