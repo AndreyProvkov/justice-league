@@ -50,9 +50,12 @@ body {
     text-decoration: none;
     font-weight: 700;
     color: rgba($white, 0.5);
-    transition: 0.2s ease color;
+    transition: 0.3s ease all;
     &:hover {
       color: rgba($white, 1);
+      &::after {
+        opacity: 1;
+      }
     }
     &::after {
       content: "";
@@ -64,6 +67,7 @@ body {
       border-radius: 5rem;
       background: $bg-gradient-safe;
       background: $bg-gradient;
+      transition: 0.4s ease all;
     }
     &.active {
       color: rgba($white, 1);
