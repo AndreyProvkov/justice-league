@@ -4,12 +4,30 @@
 $white: #fff;
 $black: #000;
 $bg-gradient: linear-gradient(316.53deg, #26fff2 13.2%, #326cff 71.54%);
+$darken-gradient: linear-gradient(316.53deg, #1bb6ac 13.2%, #154cda 71.54%);
 $bg-gradient-safe: rgb(50, 108, 255);
 
+::-webkit-scrollbar {
+  width: 1.5rem;
+}
+::-webkit-scrollbar-track {
+  background-color: $black;
+  border-radius: 0.7rem;
+}
+::-webkit-scrollbar-thumb {
+  background-image: $bg-gradient;
+  border-radius: 0.7rem;
+  border: 0.4rem solid transparent;
+  background-clip: content-box;
+  &:hover {
+    background-image: $darken-gradient;
+  }
+}
 html {
   font-size: 10px;
   scroll-behavior: smooth;
 }
+
 body {
   background-color: #000;
   color: #fff;
