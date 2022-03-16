@@ -8,6 +8,7 @@ $bg-gradient-safe: rgb(50, 108, 255);
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 body {
   background-color: #000;
@@ -26,6 +27,32 @@ body {
   padding-right: 1.5rem;
   max-width: 144rem;
   margin: 0 auto;
+}
+.arrow-up {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: $bg-gradient-safe;
+  background: $bg-gradient;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 3;
+  right: 2rem;
+  bottom: 2rem;
+  opacity: 0;
+  transition: 0.5s opacity;
+  &.active {
+    opacity: 0.3;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+.arrow-up__image {
+  width: 2rem;
+  height: 2rem;
 }
 .header {
   display: flex;
