@@ -6,6 +6,8 @@ $black: #000;
 $bg-gradient: linear-gradient(316.53deg, #26fff2 13.2%, #326cff 71.54%);
 $darken-gradient: linear-gradient(316.53deg, #1bb6ac 13.2%, #154cda 71.54%);
 $bg-gradient-safe: rgb(50, 108, 255);
+$marketing-gradient: linear-gradient(87.02deg, #0d1a73 29.67%, #000000 70.52%);
+$marketing-shadow: 0px 0px 30px rgba(255, 255, 255, 0.1);
 
 ::-webkit-scrollbar {
   width: 1.5rem;
@@ -468,39 +470,41 @@ body {
 }
 .marketing {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
+  border-radius: 2rem;
+  background: $marketing-gradient;
+  box-shadow: $marketing-shadow;
   margin-top: 2.1rem;
-  &-item {
+  overflow: hidden;
+  &__poster {
+    display: inline-block;
+    width: 50%;
+    background-image: url("../img/marketing/marketing-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &__date {
+    padding: 7rem 0 4rem 0;
     flex: 0 0 50%;
-    border-radius: 2rem;
-    &:first-child {
-      .marketing__link {
-        border-radius: 2rem 0 0 2rem;
-      }
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &-title {
+      font-weight: 700;
+      font-size: 6.4rem;
+      text-transform: capitalize;
+      color: #ffffff;
+      margin: 0;
+      margin-top: 1.5rem;
     }
-    &:last-child {
-      .marketing__link {
-        border-radius: 0 2rem 2rem 0;
-      }
+    &-img {
+      width: 42%;
     }
-  }
-  &__link {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    height: 34.1rem;
-    display: block;
-  }
-  &__img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
   }
 }
+
 .offer {
   max-width: 122.4rem;
   margin: 2rem auto 12.1rem;
