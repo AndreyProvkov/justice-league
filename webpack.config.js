@@ -8,7 +8,7 @@ const isProd = !isDev;
 module.exports = {
     mode: 'development',
     context: path.resolve(__dirname, 'src'),
-    entry: './index.js',
+    entry: './js/index.js',
     output: {
         filename: '[name].[contenthash].js',
         assetModuleFilename: 'assets/[hash][ext][query]',

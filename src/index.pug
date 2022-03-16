@@ -10,7 +10,8 @@ html(lang="en")
     body 
         include modules/header
 
-        section.section-banner
+
+        section(data-scroll="banner").section-banner
             img(src=require("./img/banner.png"), alt="banner").section-banner__image
             .container
                 .banner 
@@ -24,7 +25,7 @@ html(lang="en")
                     .banner-control 
                         button.banner-control__btn.banner-control__btn-main Watch
                         button.banner-control__btn.banner-control__btn-more More information
-        section.section 
+        section(data-scroll="tv-shows").section 
             .container 
                 h2.section__h2 
                     a(href="#").section__h2-link Trending TV Shows
@@ -47,7 +48,7 @@ html(lang="en")
                     .movies-item 
                         a(href="#").movies__link 
                             img(src=require('./img/posters/poster-6.png'), alt="poster6").movies__img
-        section.section 
+        section(data-scroll="movies").section 
             .container 
                 h2.section__h2 
                     a(href="#").section__h2-link Trending Movies
@@ -71,7 +72,7 @@ html(lang="en")
                         a(href="#").movies__link 
                             img(src=require('./img/posters/poster-6.png'), alt="poster6").movies__img
                 button.section__btn See more
-        section.section 
+        section(data-scroll="genres").section 
             .container 
                 h2.section__h2 
                     a(href="#").section__h2-link Popular Genres
