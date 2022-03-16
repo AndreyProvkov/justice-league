@@ -165,8 +165,10 @@ body {
   }
 }
 .section {
-  padding-top: 5rem;
+  padding-top: 6rem;
   &__h2 {
+    margin: 0;
+    margin-bottom: 4rem;
     font-size: 2.8rem;
     line-height: 2rem;
     padding-left: 2rem;
@@ -215,6 +217,7 @@ body {
     box-shadow: 0px 4px 50px rgba($bg-gradient-safe, 0.5);
     transition: 0.2s ease box-shadow;
     margin-top: 5.5rem;
+    margin-bottom: 4rem;
     &:hover {
       box-shadow: 0px 0px 0px rgba($bg-gradient-safe, 0.5);
     }
@@ -441,6 +444,9 @@ body {
     margin: 0.2rem 0 0 0;
   }
 }
+.section-actors {
+  padding-top: 4rem;
+}
 .actors {
   display: flex;
   align-items: center;
@@ -467,13 +473,17 @@ body {
     width: 19rem;
     height: 19rem;
   }
+  &__title {
+    margin: 0;
+    margin-top: 2rem;
+  }
 }
 .marketing {
   display: flex;
   border-radius: 2rem;
   background: $marketing-gradient;
   box-shadow: $marketing-shadow;
-  margin-top: 2.1rem;
+  margin-top: 4.1rem;
   overflow: hidden;
   &__poster {
     display: inline-block;
@@ -507,7 +517,7 @@ body {
 
 .offer {
   max-width: 122.4rem;
-  margin: 2rem auto 12.1rem;
+  margin: 6rem auto 12.1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -543,7 +553,7 @@ body {
 }
 footer {
   background-color: #101012;
-  padding: 7rem 0 5rem;
+  padding: 5.5rem 0 5rem;
 }
 .footer {
   display: flex;
@@ -559,6 +569,9 @@ footer {
     padding-left: 0;
     margin: 0;
     &__item {
+      &:last-child {
+        margin-bottom: 0;
+      }
       margin-bottom: 2rem;
     }
     &__link {
