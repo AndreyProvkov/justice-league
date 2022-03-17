@@ -5,3 +5,4 @@ import './slick.min';
 import './nav';
 import './movies-slider';
 import './arrow-up';
+import './modal-registry';

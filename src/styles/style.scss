@@ -9,6 +9,7 @@ $darken-gradient: linear-gradient(316.53deg, #1bb6ac 13.2%, #154cda 71.54%);
 $bg-gradient-safe: rgb(50, 108, 255);
 $marketing-gradient: linear-gradient(87.02deg, #0d1a73 29.67%, #000000 70.52%);
 $marketing-shadow: 0px 0px 30px rgba(255, 255, 255, 0.1);
+$modal-gradient: linear-gradient(87.02deg, #010627 29.67%, #000000 70.52%);
 
 ::-webkit-scrollbar {
   width: 1.5rem;
@@ -520,7 +521,6 @@ body {
     }
   }
 }
-
 .offer {
   max-width: 122.4rem;
   margin: 6rem auto 12.1rem;
@@ -555,6 +555,97 @@ body {
     &:hover {
       box-shadow: 0px 0px 0px rgba($bg-gradient-safe, 0.5);
     }
+  }
+  &-modal {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+    &__content {
+      position: relative;
+      background-color: #fefefe;
+      margin: auto;
+      padding: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 1rem;
+      overflow: hidden;
+      width: 40%;
+      box-shadow: 0 0 8px 0 $bg-gradient-safe;
+      animation-name: animatezoom;
+      animation-duration: 0.4s;
+      background: $modal-gradient;
+    }
+    &__close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      &:hover,
+      &:focus {
+        color: $white;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+    &__form {
+      padding: 2rem 2rem;
+    }
+    &__title {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    &__body {
+      padding: 1.8rem 1rem;
+    }
+    &__label-text {
+      margin-right: 1rem;
+    }
+    &__email {
+      width: 60%;
+    }
+    &__footer {
+      padding: 1rem 2rem;
+      background-color: rgba($black, 0.9);
+      color: gray;
+      display: flex;
+      justify-content: flex-end;
+    }
+    &__button {
+      &-register {
+        border-radius: 10rem;
+        padding: 0.5rem 1rem;
+        font-family: "Mulish", sans-serif;
+        font-size: 1.5rem;
+        cursor: pointer;
+        background: $bg-gradient-safe;
+        background: $bg-gradient;
+        outline: none;
+        border: none;
+        color: $white;
+        box-shadow: 0px 4px 50px rgba($bg-gradient-safe, 0.5);
+        transition: 0.2s ease box-shadow;
+        &:hover {
+          box-shadow: 0px 0px 0px rgba($bg-gradient-safe, 0.5);
+        }
+      }
+    }
+  }
+}
+@keyframes animatezoom {
+  from {
+    top: 50%;
+    transform: translateY(0%) scale(0);
+  }
+  to {
+    top: 50%;
+    transform: translateY(-50%) scale(1);
   }
 }
 footer {
