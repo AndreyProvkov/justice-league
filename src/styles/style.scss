@@ -1,5 +1,6 @@
+@use "normalize";
 @use "fonts";
-@import "~normalize.css";
+@use "slick";
 
 $white: #fff;
 $black: #000;
@@ -47,6 +48,12 @@ body {
   padding-right: 1.5rem;
   max-width: 144rem;
   margin: 0 auto;
+}
+.container-movies {
+  overflow: hidden;
+  padding-left: 1rem;
+  padding-top: 0.8rem;
+  padding-bottom: 1rem;
 }
 .arrow-up {
   width: 4rem;
@@ -348,34 +355,29 @@ body {
     }
   }
 }
+.slick {
+  &-list {
+    overflow: visible;
+  }
+}
 .movies {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  position: relative;
   &-item {
-    flex: 0 0 14%;
+    position: relative;
     border-radius: 2rem;
-    transition: 0.2s ease all;
-    box-shadow: 0px 0px 0px rgba(44, 176, 249, 0);
-    filter: drop-shadow(0px 0px 0px rgba(44, 176, 249, 0));
-    &:hover {
-      box-shadow: 0px 0px 20px rgba(44, 176, 249, 0.5);
-      filter: drop-shadow(0px 0px 20px rgba(44, 176, 249, 0.5));
-    }
+    margin: 0 2rem;
   }
   &__link {
-    position: relative;
     width: 100%;
     height: 30.9rem;
     display: block;
   }
   &__img {
     border-radius: 2rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
+    transition: 0.2s ease all;
+    &:hover {
+      filter: drop-shadow(0px 0px 20px rgba(44, 176, 249, 0.5));
+    }
   }
 }
 .genres {
