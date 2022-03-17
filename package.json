@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "@fancyapps/ui": "^4.0.26",
+    "aos": "^2.3.4",
     "jquery": "^3.6.0",
     "normalize.css": "^8.0.1"
   }
