@@ -1,6 +1,7 @@
 @use "normalize";
 @use "fonts";
 @use "slick";
+@use "hamburgers/hamburgers";
 
 $white: #fff;
 $black: #000;
@@ -98,6 +99,34 @@ body {
   margin: 0 auto;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+.hamburger {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 2rem;
+  &-inner {
+    background-color: $white;
+    &::after,
+    &::before {
+      background-color: $white;
+    }
+  }
+  &.is-active {
+    .hamburger {
+      &-inner {
+        background-color: $white;
+        &::after,
+        &::before {
+          background-color: $white;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 676px) {
+    display: inline-block;
+  }
+}
 }
 .nav {
   display: flex;
