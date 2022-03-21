@@ -1,4 +1,4 @@
-'use strict'
+import {removeActiveHeaderElements} from './header';
 
 const navLink = document.querySelectorAll('.nav-link');
 const elementsForScroll = document.querySelectorAll('[data-scroll]');
@@ -22,7 +22,8 @@ function scroll(e) {
 
 function addActiveClass() {
     navLink.forEach( item => {
-        item.classList.remove('active');
+        item.classList.remove('nav-link_active');
     });
-    this.classList.add('active');
+    removeActiveHeaderElements();
+    this.classList.add('nav-link_active');
 }
