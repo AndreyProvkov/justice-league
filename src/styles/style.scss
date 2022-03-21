@@ -345,6 +345,12 @@ body {
     max-width: 95.5rem;
     object-fit: cover;
   }
+  @media (max-width: 576px) {
+    &__image {
+      filter: brightness(0.15);
+      width: 115%;
+    }
+  }
 }
 .banner {
   max-width: 56.2rem;
@@ -419,42 +425,63 @@ body {
       font-family: "Mulish", sans-serif;
       font-weight: 800;
       cursor: pointer;
-    }
-    &__btn-main {
-      background: $bg-gradient-safe;
-      background: $bg-gradient;
-      color: $white;
-      box-shadow: 0px 4px 50px rgba($bg-gradient-safe, 0.5);
-      position: relative;
-      padding-left: 6rem;
-      margin-right: 3rem;
-      transition: 0.2s ease box-shadow;
-      display: inline-block;
-      text-decoration: none;
-      &:hover {
-        box-shadow: 0px 0px 0px rgba($bg-gradient-safe, 0.5);
-      }
-      &::after {
-        content: "";
-        display: block;
-        width: 1.4rem;
-        height: 1.8rem;
-        background-image: url("../img/play.svg");
-        position: absolute;
-        left: 3rem;
-        top: calc(50% - 0.9rem);
-      }
-    }
-    &__btn-more {
-      background-color: $white;
-      color: #323232;
-      transition: 0.2s ease background-color, 0.2s ease color;
-      &:hover {
+      &-main {
+        background: $bg-gradient-safe;
+        background: $bg-gradient;
         color: $white;
-        outline: 0.2rem solid $white;
-        background-color: transparent;
+        box-shadow: 0px 4px 50px rgba($bg-gradient-safe, 0.5);
+        position: relative;
+        padding-left: 6rem;
+        margin-right: 3rem;
+        transition: 0.2s ease box-shadow;
+        display: inline-block;
+        text-decoration: none;
+        &:hover {
+          box-shadow: 0px 0px 0px rgba($bg-gradient-safe, 0.5);
+        }
+        &::after {
+          content: "";
+          display: block;
+          width: 1.4rem;
+          height: 1.8rem;
+          background-image: url("../img/play.svg");
+          position: absolute;
+          left: 3rem;
+          top: calc(50% - 0.9rem);
+        }
+      }
+      &-more {
+        background-color: $white;
+        color: #323232;
+        transition: 0.2s ease background-color, 0.2s ease color;
+        &:hover {
+          color: $white;
+          outline: 0.2rem solid $white;
+          background-color: transparent;
+        }
       }
     }
+  }
+
+  @media (max-width: 967px) {
+    max-width: 34.2rem;
+    padding-top: 7rem;
+    padding-bottom: 11rem;
+    &__title {
+      font-size: 5rem;
+      line-height: 6rem;
+    }
+    &-control {
+      &__btn {
+        &-main {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    background: none;
+    box-shadow: none;
   }
 }
 .slick {
