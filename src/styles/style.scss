@@ -593,6 +593,22 @@ body {
     font-weight: 700;
     margin: 0.2rem 0 0 0;
   }
+  @media (max-width: 967px) {
+    &-item {
+      padding: 3rem 0.5rem 2rem;
+    }
+    &-image {
+      height: 5rem;
+    }
+    &__title {
+      font-size: 2rem;
+    }
+  }
+  @media (max-width: 676px) {
+    &-item {
+      flex: 0 0 48%;
+    }
+  }
 }
 .section-actors {
   padding-top: 4rem;
