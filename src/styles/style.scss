@@ -865,6 +865,10 @@ body {
 footer {
   background-color: #101012;
   padding: 5.5rem 0 5rem;
+  @media (max-width: 1200px) {
+    padding-top: 3rem;
+    padding-bottom: 0;
+  }
 }
 .footer {
   display: flex;
@@ -910,5 +914,18 @@ footer {
         transition: 0.4s ease all;
       }
     }
+  }
+  @media (max-width: 1200px) {
+    &-item {
+      width: 19rem;
+      margin: 1.5rem;
+      &:first-child {
+        display: none;
+      }
+    }
+  }
+  @media (max-width: 967px) {
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
