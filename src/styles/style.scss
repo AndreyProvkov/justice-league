@@ -615,7 +615,7 @@ body {
 }
 .actors {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
   margin-top: 2.1rem;
@@ -623,25 +623,29 @@ body {
     flex: 0 0 14%;
   }
   &__link {
-    overflow: hidden;
     position: relative;
-    width: 19rem;
-    height: 19rem;
     display: block;
-    border-radius: 100%;
   }
   &__img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     object-fit: cover;
-    width: 19rem;
-    height: 19rem;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
   }
   &__title {
     margin: 0;
     margin-top: 2rem;
+  }
+  @media (max-width: 967px) {
+    &-item {
+      margin-bottom: 3rem;
+      flex: 0 0 28%;
+    }
+  }
+  @media (max-width: 676px) {
+    &-item {
+      flex: 0 0 48%;
+    }
   }
 }
 .marketing {
