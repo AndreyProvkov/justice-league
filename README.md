@@ -9,4 +9,4 @@
 - js libraries: aos, slick, fancybox
 - webpack
 
-[Click to view](https://andreyprovkov.github.io/justice-league-to-view/){:target="_blank"}
+<a href="https://andreyprovkov.github.io/justice-league-to-view/" target="_blank">Click to view</a>
