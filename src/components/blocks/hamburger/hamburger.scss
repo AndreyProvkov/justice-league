@@ -1,0 +1,30 @@
+@use "../../../styles/vars";
+
+.hamburger {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 2rem;
+  &-inner {
+    background-color: vars.$white;
+    &::after,
+    &::before {
+      background-color: vars.$white;
+    }
+  }
+  &.is-active {
+    .hamburger {
+      &-inner {
+        background-color: vars.$white;
+        &::after,
+        &::before {
+          background-color: vars.$white;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 676px) {
+    display: inline-block;
+  }
+}

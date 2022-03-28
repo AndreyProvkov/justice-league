@@ -1,0 +1,67 @@
+@use "../../../styles/vars";
+
+.control {
+  display: flex;
+  align-items: center;
+  &-btn {
+    display: block;
+    padding: 2rem;
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-right: 3.5rem;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+    &__icon {
+      transition: 0.2s all;
+      width: 1.8rem;
+      height: 1.8rem;
+      &:hover {
+        transform: scale(1.2);
+      }
+      &-search {
+        &:hover {
+          stroke: vars.$bg-gradient-safe;
+        }
+      }
+      &-notice {
+        width: 2.13rem;
+        height: 2.352rem;
+        &:hover {
+          fill: vars.$bg-gradient-safe;
+        }
+      }
+      &-account {
+        &:hover {
+          fill: vars.$bg-gradient-safe;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 967px) {
+    &-btn {
+      padding: 1rem;
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+  @media (max-width: 676px) {
+    display: none;
+    &_active {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-btn {
+      margin: 0.5rem;
+      &:last-child {
+        padding: 1rem;
+      }
+      &:not(:last-child) {
+        margin: 0.5rem;
+      }
+    }
+  }
+}

@@ -1,18 +1,20 @@
 @font-face {
   font-family: "Marcellus";
-  src: url("../fonts/marcellus/Marcellus-Regular.ttf") format("truetype");
+  src: url("../components/fonts/marcellus/Marcellus-Regular.ttf")
+    format("truetype");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Mulish";
-  src: url("../fonts/mulish/Mulish-VariableFont_wght.ttf") format("truetype");
+  src: url("../components/fonts/mulish/Mulish-VariableFont_wght.ttf")
+    format("truetype");
   font-style: normal;
 }
 
 @font-face {
   font-family: "Mulish";
-  src: url("../fonts/mulish/Mulish-Italic-VariableFont_wght.ttf")
+  src: url("../components/fonts/mulish/Mulish-Italic-VariableFont_wght.ttf")
     format("truetype");
   font-style: italic;
 }

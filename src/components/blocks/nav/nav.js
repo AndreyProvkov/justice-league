@@ -1,4 +1,4 @@
-import {removeActiveHeaderElements} from './header';
+import {removeActiveHeaderElements} from '../header/header';
 
 const navLink = document.querySelectorAll('.nav-link');
 const elementsForScroll = document.querySelectorAll('[data-scroll]');

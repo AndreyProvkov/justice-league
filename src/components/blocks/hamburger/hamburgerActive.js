@@ -1,4 +1,4 @@
-import {toggleActiveHeaderElements} from './header';
+import {toggleActiveHeaderElements} from '../header/header';
 
 const hamburgerBtn = document.querySelector('.hamburger');
 

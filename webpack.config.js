@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const isDev = process.env.NODE_ENV = 'development';
+const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
 
 module.exports = {
@@ -70,10 +70,10 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: '[name].[contenthash].css',
+            filename: '[name].[hash].css',
         }),
         new HtmlWebpackPlugin({
-            template: './index.pug',
+            template: './pages/index.pug',
             filename: 'index.html',
             minify: {
                 collapseWhitespace: isProd,

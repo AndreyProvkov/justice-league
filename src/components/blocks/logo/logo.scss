@@ -1,0 +1,7 @@
+.logo {
+  @media (max-width: 676px) {
+    &_active {
+      display: none;
+    }
+  }
+}
