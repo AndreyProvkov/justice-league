@@ -944,17 +944,17 @@
 
 @font-face {
   font-family: "Marcellus";
-  src: url(assets/379c0e43574baa7d41e9.ttf) format("truetype");
+  src: url(../assets/379c0e43574baa7d41e9.ttf) format("truetype");
   font-weight: 400;
 }
 @font-face {
   font-family: "Mulish";
-  src: url(assets/bcafeb0fadf20710b1c6.ttf) format("truetype");
+  src: url(../assets/bcafeb0fadf20710b1c6.ttf) format("truetype");
   font-style: normal;
 }
 @font-face {
   font-family: "Mulish";
-  src: url(assets/2b56bccb540768b868ad.ttf) format("truetype");
+  src: url(../assets/2b56bccb540768b868ad.ttf) format("truetype");
   font-style: italic;
 }
 .aosfademanual {
@@ -1367,7 +1367,7 @@ footer {
   display: block;
   width: 100%;
   height: 2.4rem;
-  background-image: url(assets/e482f2d72169f882f6c2.svg);
+  background-image: url(../assets/e482f2d72169f882f6c2.svg);
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -1388,7 +1388,7 @@ footer {
   display: inline-block;
   width: 1.6rem;
   height: 1.6rem;
-  background-image: url(assets/d2a0d128c0afea52b00e.svg);
+  background-image: url(../assets/d2a0d128c0afea52b00e.svg);
   margin-left: 1rem;
   position: absolute;
   top: calc(50% - 0.8rem);
@@ -1426,7 +1426,7 @@ footer {
   display: block;
   width: 1.4rem;
   height: 1.8rem;
-  background-image: url(assets/7404546ecb2ffd854abb.svg);
+  background-image: url(../assets/7404546ecb2ffd854abb.svg);
   position: absolute;
   left: 3rem;
   top: calc(50% - 0.9rem);
@@ -1612,7 +1612,7 @@ footer {
 .marketing__poster {
   display: inline-block;
   width: 50%;
-  background-image: url(assets/a3fe4a4196804b65867d.png);
+  background-image: url(../assets/a3fe4a4196804b65867d.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1677,7 +1677,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-image: url(assets/b415e52376a7b274fee1.png);
+  background-image: url(../assets/b415e52376a7b274fee1.png);
   padding: 7.2rem 14.7rem 7.2rem 5.7rem;
   background-repeat: no-repeat;
   background-size: cover;
