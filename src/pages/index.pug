@@ -1,5 +1,8 @@
 extends ../layout/template.pug
 
+block variables
+    - var pageTitle = "Onile TV"
+
 block content
     a(href="#up").arrow-up
         img(src=require("../components/img/arrow-up.svg"), alt="icon: arrow-up").arrow-up__image
