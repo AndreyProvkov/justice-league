@@ -206,18 +206,17 @@ window.addEventListener('click', function (e) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! aos */ "../node_modules/aos/dist/aos.js");
 /* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_0__);
-/* provided dependency */ var $ = __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js");
 
-$(function () {
-  aos__WEBPACK_IMPORTED_MODULE_0___default().init({
-    offset: 100,
-    duration: 300,
-    easing: "ease",
-    once: true,
-    startEvent: 'DOMContentLoaded'
-  });
-  window.addEventListener('load', (aos__WEBPACK_IMPORTED_MODULE_0___default().refresh));
+aos__WEBPACK_IMPORTED_MODULE_0___default().init({
+  offset: 100,
+  delay: 50,
+  duration: 300,
+  easing: "ease",
+  once: true,
+  startEvent: 'DOMContentLoaded',
+  disable: 'mobile'
 });
+aos__WEBPACK_IMPORTED_MODULE_0___default().refresh();
 
 /***/ }),
 

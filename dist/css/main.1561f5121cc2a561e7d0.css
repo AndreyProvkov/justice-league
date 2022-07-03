@@ -966,12 +966,10 @@
 ::-webkit-scrollbar {
   width: 1.5rem;
 }
-
 ::-webkit-scrollbar-track {
   background-color: #000;
   border-radius: 0.7rem;
 }
-
 ::-webkit-scrollbar-thumb {
   background-image: linear-gradient(316.53deg, #26fff2 13.2%, #326cff 71.54%);
   border-radius: 0.7rem;
@@ -994,7 +992,7 @@ body {
   background-color: #000;
   color: #fff;
   font-size: 16px;
-  font-family: "Mulish", sans-serif;
+  font-family: "Mulish", Arial, sans-serif;
 }
 
 .container {
@@ -1003,12 +1001,14 @@ body {
   max-width: 144rem;
   margin: 0 auto;
 }
-
 .container-movies {
   overflow: hidden;
   padding-left: 1rem;
   padding-top: 0.8rem;
   padding-bottom: 1rem;
+}
+.container-genres, .container-actors {
+  overflow: hidden;
 }
 
 .button:focus {
@@ -1035,7 +1035,7 @@ body {
   width: 0.8rem;
   height: 3.5rem;
   border-radius: 5rem;
-  background: #326cff;
+  background: rgb(50, 108, 255);
   background: linear-gradient(316.53deg, #26fff2 13.2%, #326cff 71.54%);
   position: absolute;
   left: 0;
@@ -1063,7 +1063,7 @@ body {
   font-family: "Mulish", sans-serif;
   font-weight: 800;
   cursor: pointer;
-  background: #326cff;
+  background: rgb(50, 108, 255);
   background: linear-gradient(316.53deg, #26fff2 13.2%, #326cff 71.54%);
   color: #fff;
   box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
@@ -1211,7 +1211,7 @@ footer {
   height: 0.2rem;
   margin-top: 0.5rem;
   border-radius: 5rem;
-  background: #326cff;
+  background: rgb(50, 108, 255);
   background: linear-gradient(316.53deg, #26fff2 13.2%, #326cff 71.54%);
   transition: 0.4s ease all;
 }
@@ -1263,17 +1263,17 @@ footer {
   transform: scale(1.2);
 }
 .control-btn__icon-search:hover {
-  stroke: #326cff;
+  stroke: rgb(50, 108, 255);
 }
 .control-btn__icon-notice {
   width: 2.13rem;
   height: 2.352rem;
 }
 .control-btn__icon-notice:hover {
-  fill: #326cff;
+  fill: rgb(50, 108, 255);
 }
 .control-btn__icon-account:hover {
-  fill: #326cff;
+  fill: rgb(50, 108, 255);
 }
 @media (max-width: 967px) {
   .control-btn {
@@ -1306,7 +1306,7 @@ footer {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  background: #326cff;
+  background: rgb(50, 108, 255);
   background: linear-gradient(316.53deg, #26fff2 13.2%, #326cff 71.54%);
   display: flex;
   justify-content: center;
@@ -1407,7 +1407,7 @@ footer {
   cursor: pointer;
 }
 .banner-control__btn-main {
-  background: #326cff;
+  background: rgb(50, 108, 255);
   background: linear-gradient(316.53deg, #26fff2 13.2%, #326cff 71.54%);
   color: #fff;
   box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
@@ -1698,7 +1698,7 @@ footer {
   font-family: "Mulish", sans-serif;
   font-weight: 800;
   cursor: pointer;
-  background: #326cff;
+  background: rgb(50, 108, 255);
   background: linear-gradient(316.53deg, #26fff2 13.2%, #326cff 71.54%);
   color: #fff;
   box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
@@ -1716,7 +1716,7 @@ footer {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.6);
 }
 .offer-modal__content {
@@ -1729,7 +1729,7 @@ footer {
   border-radius: 1rem;
   overflow: hidden;
   width: 40%;
-  box-shadow: 0 0 8px 0 #326cff;
+  box-shadow: 0 0 8px 0 rgb(50, 108, 255);
   animation-name: animatezoom;
   animation-duration: 0.4s;
   background: linear-gradient(87.02deg, #010627 29.67%, #000000 70.52%);
@@ -1774,7 +1774,7 @@ footer {
   font-family: "Mulish", sans-serif;
   font-size: 1.5rem;
   cursor: pointer;
-  background: #326cff;
+  background: rgb(50, 108, 255);
   background: linear-gradient(316.53deg, #26fff2 13.2%, #326cff 71.54%);
   outline: none;
   border: none;
@@ -1864,7 +1864,7 @@ footer {
   height: 0.2rem;
   margin-top: 0.5rem;
   border-radius: 5rem;
-  background: #326cff;
+  background: rgb(50, 108, 255);
   background: linear-gradient(316.53deg, #26fff2 13.2%, #326cff 71.54%);
   transition: 0.4s ease all;
 }
