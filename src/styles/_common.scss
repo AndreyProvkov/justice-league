@@ -5,22 +5,25 @@
   height: 500px;
   background-color: grey;
 }
+
 ::-webkit-scrollbar {
   width: 1.5rem;
-}
-::-webkit-scrollbar-track {
-  background-color: vars.$black;
-  border-radius: 0.7rem;
-}
-::-webkit-scrollbar-thumb {
-  background-image: vars.$bg-gradient;
-  border-radius: 0.7rem;
-  border: 0.4rem solid transparent;
-  background-clip: content-box;
-  &:hover {
-    background-image: vars.$darken-gradient;
+  &-track {
+    background-color: vars.$black;
+    border-radius: 0.7rem;
+  }
+  &-thumb {
+    background-image: vars.$bg-gradient;
+    border-radius: 0.7rem;
+    border: 0.4rem solid transparent;
+    background-clip: content-box;
+  
+    &:hover {
+      background-image: vars.$darken-gradient;
+    }
   }
 }
+
 html {
   font-size: 10px;
   scroll-behavior: smooth;
@@ -32,21 +35,25 @@ body {
   background-color: #000;
   color: #fff;
   font-size: 16px;
-  font-family: "Mulish", sans-serif;
-  // font-family: 'Marcellus', serif;
+  font-family: "Mulish", Arial, sans-serif;
 }
 .container {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   max-width: 144rem;
   margin: 0 auto;
+  &-movies {
+    overflow: hidden;
+    padding-left: 1rem;
+    padding-top: 0.8rem;
+    padding-bottom: 1rem;
+  }
+  &-genres,
+  &-actors {
+    overflow: hidden;
+  }
 }
-.container-movies {
-  overflow: hidden;
-  padding-left: 1rem;
-  padding-top: 0.8rem;
-  padding-bottom: 1rem;
-}
+
 .button {
   &:focus {
     outline: none;
