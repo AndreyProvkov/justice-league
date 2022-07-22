@@ -1,5 +1,6 @@
+import { removeActiveClassBtn } from "../hamburger/hamburgerActive"
+
 const headerClasses = ['header', 'logo', 'nav', 'control'];
-const wrapper = document.querySelector('.wrapper');
 const html = document.documentElement;
 
 function headerElements() {
@@ -13,17 +14,20 @@ function headerElements() {
 }
 
 function toggleActiveHeaderElements() {
-    for (let i = 0; i < headerElements().length; i++) {
-        headerElements()[i].classList.toggle(`${headerClasses[i]}_active`);
+    const headerElementsArr = headerElements();
+    for (let i = 0; i < headerElementsArr.length; i++) {
+        headerElementsArr[i].classList.toggle(`${headerClasses[i]}_active`);
     }
     html.classList.toggle('no-scroll');
 }
 
 function removeActiveHeaderElements() {
-    for (let i = 0; i < headerElements().length; i++) {
-        headerElements()[i].classList.remove(`${headerClasses[i]}_active`);
+    const headerElementsArr = headerElements();
+    for (let i = 0; i < headerElementsArr.length; i++) {
+        headerElementsArr[i].classList.remove(`${headerClasses[i]}_active`);
     }
+    removeActiveClassBtn();
     html.classList.remove('no-scroll');
 }
 
-export {toggleActiveHeaderElements, removeActiveHeaderElements};
+export { toggleActiveHeaderElements, removeActiveHeaderElements };

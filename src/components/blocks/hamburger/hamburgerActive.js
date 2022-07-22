@@ -1,4 +1,4 @@
-import {toggleActiveHeaderElements} from '../header/header';
+import { toggleActiveHeaderElements } from '../header/header';
 
 const hamburgerBtn = document.querySelector('.hamburger');
 
@@ -9,3 +9,8 @@ function toggleClass() {
     toggleActiveHeaderElements();
 }
 
+function removeActiveClassBtn() {
+    hamburgerBtn.classList.remove('is-active');
+}
+
+export { removeActiveClassBtn }
